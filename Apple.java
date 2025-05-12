@@ -13,7 +13,7 @@ public class Apple extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public Apple() {
-        setImage("images/apple1.png");  
+        setImage("images/apple2.png");  
     }
     
     public void act()
