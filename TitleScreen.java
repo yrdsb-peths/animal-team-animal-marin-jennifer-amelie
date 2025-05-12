@@ -1,10 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class TitleScreen here.
- * 
- * @author Tu 
- */
 public class TitleScreen extends World
 {
     Label titleLabel = new Label("Hungry Elephant", 60);
