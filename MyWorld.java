@@ -40,13 +40,13 @@ public class MyWorld extends World {
         /**
          * game over
          */
-        public void gameOver(){
-            if(score >= 10){
-                Label win = new Label("YOU WIN!", 90);
-                addObject(win, 300, 100);
+    public void gameOver(){
+        if(score >= 10){
+            Label win = new Label("YOU WIN!", 90);
+            addObject(win, 300, 100);
         } else {
-                    Label lose = new Label("TRY AGAIN!", 90);
-                    addObject(lose, 300, 100);
-                }
+                Label lose = new Label("TRY AGAIN!", 90);
+                addObject(lose, 300, 100);
+        }
     }
 }
