@@ -31,7 +31,7 @@ public class MyWorld extends World {
     public void increaseScore(){
         score++;
         scoreLabel.setValue(score);
-        if(level < 5){
+        if(level % 5 == 0){
             level++;
         }
         if(score >= 10){
