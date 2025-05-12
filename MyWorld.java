@@ -11,6 +11,7 @@ public class MyWorld extends World {
         //create label
         scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
+        createApple();
     }
     
     /**
@@ -20,7 +21,6 @@ public class MyWorld extends World {
         Apple apple = new Apple();
         int x = Greenfoot.getRandomNumber(600);
         addObject(apple, x, 0);
-        createApple();
     }
     
     /**
