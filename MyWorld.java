@@ -20,6 +20,7 @@ public class MyWorld extends World {
      */
     public void createApple() {
         Apple apple = new Apple();
+        apple.setSpeed(level);
         int x = Greenfoot.getRandomNumber(600);
         addObject(apple, x, 0);
     }
