@@ -6,6 +6,7 @@ public class MyWorld extends World {
     int level = 2;
     public MyWorld() {
         super(600, 400, 1);
+        setBackground("background.jpeg");
         Elephant elephant = new Elephant();
         addObject(elephant, 300, 300);
         //create label
