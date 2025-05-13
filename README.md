@@ -1,20 +1,8 @@
-# Set up Greenfoot for VSCode
+# Start
+1. Open project.greenfoot
+2. If prompted to create a new world, right click on "TitleScsreen" then click "new TitleScreen()"
+3. Follow the instructions on the title screen
 
-[Mac]
-1. Open `Finder` and navigate to the Applications folder.
-2. Right-click on the Greenfoot app and select `Show Package Contents`.
-3. In the opened folder, go to `Contents -> Resources -> Java` and find the `greenfoot.jar` file.
-4. Copy this `greenfoot.jar` to the `/lib` Folder in this project.
-
-[Windows]
-1. Open `File Explorer` and navigate to `C:\Program Files\Greenfoot` and locate the `greenfoot.jar` file.
-2. Copy this `greenfoot.jar` to the `\lib` Folder in this project.
-
-<br>
-<br>
-
-# project.greenfoot
-Copy the `project.greenfoot.md` file and rename it to `project.greenfoot`
-
-# Learn Markdown Basics
-[Markdown basics](https://www.markdownguide.org/getting-started/)
+# Objective
+1. You are a hungry elephant. Use the arrow keys to move the elephant and eat 10 apples
+2. The game ends when the apple touches the floor
