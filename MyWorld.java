@@ -3,7 +3,7 @@ import greenfoot.*;
 public class MyWorld extends World {
     public int score;
     Label scoreLabel;
-    int level = 2;
+    int level = 5;
     public MyWorld() {
         super(600, 400, 1, false);
         setBackground("background.jpeg");
@@ -22,7 +22,7 @@ public class MyWorld extends World {
     public void increaseScore(){
         score++;
         scoreLabel.setValue(score);
-        if(level % 5 == 0){
+        if(level % 3 == 0){
             level++;
         }
         if(score >= 10){
