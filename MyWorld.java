@@ -22,6 +22,7 @@ public class MyWorld extends World {
     public void increaseScore(){
         score++;
         scoreLabel.setValue(score);
+        Apple.setSpeed(score);
         if(level % 5 == 0){
             level++;
         }
