@@ -5,7 +5,7 @@ public class MyWorld extends World {
     Label scoreLabel;
     int level = 2;
     public MyWorld() {
-        super(600, 400, 1);
+        super(600, 400, 1, false);
         setBackground("background.jpeg");
         Elephant elephant = new Elephant();
         addObject(elephant, 300, 300);
