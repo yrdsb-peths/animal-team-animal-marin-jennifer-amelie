@@ -21,11 +21,12 @@ public class Apple extends Actor
     public void act()
     {
         // Apple falls downwards
-        setLocation(getX(), getY()+speed);
+        setLocation(getX(), getY()+speed*2);
         
         // Remove apple and draw game over when apple gets to bottom
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight()) {
+            world.gameOver();
             world.removeObject(this);
         }// Add your action code here.
     }

@@ -15,15 +15,6 @@ public class MyWorld extends World {
         createApple();
     }
     
-    /**
-     * Create a new apple at random location at top of screen
-     */
-    public void createApple() {
-        Apple apple = new Apple();
-        apple.setSpeed(level);
-        int x = Greenfoot.getRandomNumber(600);
-        addObject(apple, x, 0);
-    }
     
     /**
      * Increases score
@@ -37,6 +28,15 @@ public class MyWorld extends World {
         if(score >= 10){
             gameOver();
         }
+    }
+    /**
+     * Create a new apple at random location at top of screen
+     */
+    public void createApple() {
+        Apple apple = new Apple();
+        apple.setSpeed(level);
+        int x = Greenfoot.getRandomNumber(600);
+        addObject(apple, x, 0);
     }
         /**
          * game over
