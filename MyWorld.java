@@ -5,6 +5,7 @@ public class MyWorld extends World {
     Label scoreLabel;
     int level = 1;
     GreenfootSound elephantSound = new GreenfootSound("elephant_sound.mp3");
+    GreenfootSound over = new GreenfootSound("over.mp3");
     public MyWorld() {
         super(600, 400, 1, false);
         setBackground("background.jpeg");
@@ -51,6 +52,7 @@ public class MyWorld extends World {
         } else {
                 Label lose = new Label("TRY AGAIN!", 90);
                 addObject(lose, 300, 100);
+                over.play();
         }
     }
 }
