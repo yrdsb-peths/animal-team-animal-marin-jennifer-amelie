@@ -3,7 +3,8 @@ import greenfoot.*;
 public class MyWorld extends World {
     public int score;
     Label scoreLabel;
-    int level = 5;
+    int level = 1;
+    GreenfootSound elephantSound = new GreenfootSound("elephant_sound.mp3");
     public MyWorld() {
         super(600, 400, 1, false);
         setBackground("background.jpeg");
@@ -46,6 +47,7 @@ public class MyWorld extends World {
         if(score >= 10){
             Label win = new Label("YOU WIN!", 90);
             addObject(win, 300, 100);
+            elephantSound.play();
         } else {
                 Label lose = new Label("TRY AGAIN!", 90);
                 addObject(lose, 300, 100);
