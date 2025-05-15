@@ -16,7 +16,7 @@ public class Apple extends Actor
         setImage("images/apple2.png");  
     }
     
-    int speed = 1;
+    static int speed = 1;
     
     public void act()
     {
@@ -31,7 +31,7 @@ public class Apple extends Actor
         }// Add your action code here.
     }
     
-    public void setSpeed(int spd) {
+    public static void setSpeed(int spd) {
         speed = spd;
     }
 }
